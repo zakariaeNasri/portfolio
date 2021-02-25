@@ -92,6 +92,23 @@ nav ul li {
 {
     border-top:0.18rem solid var(--priblue) ;
 }
+/*********Header******/
+.header-wraper
+{
+    position: relative;
+    background: url(BG1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 
 
