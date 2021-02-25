@@ -50,6 +50,11 @@ body {
 .logo {
     width: 10rem;
 }
+nav
+{
+    z-index: 2;
+}
+
 
 nav a.nav-link {
     font-weight: 0.8rem !important;
@@ -101,13 +106,76 @@ nav ul li {
     background-position: center;
     height: 90vh;
 }
-.container
+.main-info
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: var(--priblue);
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+}
+/********** typed-txt style*******/
+.typed-txt
+{
+    font-size: 2rem;
+    color: #f52a5d;
+}
+/*******main offer btn******/
+.btn-main-offer
+{
+    border: 1px solid var(--priblue) ;
+    text-transform: uppercase;
+    border-radius: 5%;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    color: #f31f42;
+    margin: 2rem;
+    z-index: 2;
+    font-weight: bold;
+}
+.btn-main-offer:hover{
+    text-decoration: none;
+    background-color:#f31f42 ;
+    color: #61dafb;
+    transition: .2s ease-in-out;
+}
+
+.tsparticles-canvas-el
+{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+@media(max-width:768px)
+{
+    .tsparticles-canvas-el {
+       display: none;
+    }
+}
+@media(max-width:768px)
+{
+    .main-info h1 {
+        font-size: 1.5rem !important;
+    }
+    .typed-txt
+    {
+        font-size: 1.7rem !important;
+    }
+}
+@media(max-width:768px)
+{
+    .navbar-brand
+    {
+        width: 7rem;
+    }
 }
 
 
