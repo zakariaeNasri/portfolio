@@ -1,35 +1,29 @@
 
-import './App.css';
+
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./components/Navbar";
+import HomeScreens from "./Screens/HomeScreens";
 import Header from "./components/Header";
-import Particles from "react-particles-js";
-function App() {
+import Aboutme from "./components/Aboutme";
+import Services from "./components/Services"
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
+
+const App =()=>{
   return (
-    <>
-    <Particles
-      params={{
-        particles:{
-          number:{
-            value:30,
-            density:{
-              enable:true,
-              value_area:900
-            }
-          },
-          shape:{
-            type: "circle",
-            stroke:{
-              width:6,
-              color: "#bff"
-            }
-          }
-        }
-      }}
-    />
-      <Navbar />
+    <Router>
       <Header />
-    </>
+      <main>
+
+        <Route path="/" component={HomeScreens}/>
+        <Aboutme/>
+        <Services/>
+      </main>
+      
+    </Router>
   );
 }
 export default App;
