@@ -3,7 +3,7 @@ import Animation from "../components/Animation";
 import Aboutme from "../components/Aboutme";
 import Services from "../components/Services";
 import Experience from "../components/Experience";
-import Projects from "../components/projects";
+import Projects from "../components/Projects";
 
 
 const HomeScreens = () => {

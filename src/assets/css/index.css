@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: "Montserrat" sans-serif !important;
+    font-family: "Montserrat" !important;
 }
 
 .App-logo {
@@ -480,13 +480,20 @@ nav ul li {
     cursor: pointer;
 }
 /****popupbox****/
+.popupbox-content
+{
+    background: var(--grey) !important;
+    width: 50rem !important;
+}
 .project-image-popupbox
 {
-    width: 50rem;
+    width: 30rem  ;
     padding: 0 0.5rem;
 }
 .hyper-link
 {
+    font-family: "montserrat" ;
+    font-weight: 800 !important;
     cursor: pointer;
     color: var(--red);
 }
@@ -495,23 +502,44 @@ nav ul li {
     color: var(--red);
     
 }
+.popupbox-titleBar
+{
+    font-family: "montserrat";
+    font-weight: 800 !important;
+    color: var(--red);
+
+}
+.par{
+    font-family: "montserrat";
+    font-weight: 800 !important;
+    color: var(--priblue);
+}
 /**---- popupmedia--**/
 @media(max-width : 768px)
 {
-    .project-image-popupbox
+    .pop
     {
         width: 100%;
     }
+    .project-image-popupbox
+    {
+        width: 50%;
+    }
 }
-@media(max-height : 570px)
+@media(max-width: 360px)
 {
+    .pop
+    {
+        width: 100%;
+    }
     .popupbox-wrapper
     {
         height:100% ;
     }
     .project-image-popupbox
     {
-        width: 55%;
+        width: 80% !important;
+        height: 60% !important;
     }
 }
 @media(max-height : 280px)
@@ -523,6 +551,46 @@ nav ul li {
     .project-image-popupbox
     {
         width: 20%;
+    }
+}
+/**************carousel**************/
+.carousel-status
+{
+    display: none !important;
+    color: var(--red) !important;
+    font-family: "montserrat";
+    font-weight: 900 !important;
+}
+.dot
+{
+    background: var(--priblue)!important;
+}
+li.dot.selected
+{
+    box-shadow: 1px 1px 2px rgba(172, 33, 33, 90%) !important;
+}
+.carousel .thumb.selected, .carousel .thumb:hover {
+    border: 3px solid var(--priblue) !important;
+}
+.carousel .thumb
+{
+    border: 3px solid var(--grey) !important;
+}
+.carousel .thumbs
+{
+    text-align: center !important;
+}
+.carousel .control-next.control-arrow:before {
+    border-left: 8px solid var(--red) !important;
+}
+.carousel .control-prev.control-arrow:before {
+    border-right: 8px solid var(--red) !important;
+}
+@media(max-width: 360px)
+{
+    .slide.selected
+    {
+        width: 40%;
     }
 }
 
