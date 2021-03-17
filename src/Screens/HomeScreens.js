@@ -1,5 +1,9 @@
 import Typed from "react-typed";
 import Animation from "../components/Animation";
+import Aboutme from "../components/Aboutme";
+import Services from "../components/Services";
+import Experience from "../components/Experience";
+import Projects from "../components/projects";
 
 
 const HomeScreens = () => {
@@ -22,6 +26,11 @@ const HomeScreens = () => {
             
         </div>
         
+        <Aboutme/>
+        
+        <Services/>
+        <Experience/>
+        <Projects/>
         </>
     )
 }
